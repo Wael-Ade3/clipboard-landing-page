@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%); 
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+    --padding:50px ; 
+}
+ 
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+p{
+    line-height: 25px;
+}
+ 
+a{
+    font-weight: 500;
+}
+/* Start Header Style */
+header{
+    background: url(images/bg-header-mobile.png);
+    background-position: center;
+    background-size: cover;
+    padding:var(--padding);
+}
+header .icon img {
+    margin: 70px auto;
+}
+header .text :first-child {
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 20px;
+}
+header .text :nth-child(2){
+    color: var(--GrayishBlue);
+    margin-bottom: 50px;
+}
+header .links a , .download .links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 25px auto;
+}
+header .links :first-child , .download .links :first-child{
+    background-color: var(--StrongCyan);
+   
+    
+}
+header .links :nth-child(2) , .download .links :last-child{
+    background-color: var(--LightBlue);
+    margin-bottom: 15px ;
+    
+}
+/* End Header Style */
+
+
+/* Start Details Style */
+.details{
+    padding: var(--padding);
+}
+.details .details-text :first-child {
+    color: var(--DarkGrayishBlue);
+}
+.details .details-text :nth-child(2) {
+    color: var(--GrayishBlue);
+    margin: 20px auto;
+}
+.device-details .left img {
+    width: 100%;
+    margin: 40px auto;
+}
+
+.device-details .right .sec  {
+    margin-bottom: 50px;
+}
+.device-details .right .sec :first-child  {
+    color: var(--DarkGrayishBlue);
+    margin: 10px;
+}
+.device-details .right .sec :nth-child(2)  {
+    color: var(--GrayishBlue);
+    margin: 10px;
+}
+/* End Details Style */
+
+
+/* Start Clipboard Style */
+.clipboard {
+    
+    padding: var(--padding);
+}
+.clipboard :first-child{
+    color: var(--DarkGrayishBlue);
+}
+.clipboard :nth-child(2){
+    color: var(--GrayishBlue);
+    margin: 20px auto;
+}
+.clipboard :nth-child(3){
+    width: 100%;
+    margin-top: 30px;
+}
+/* End Clipboard Style */
+
+/* Start Charge Style */
+.charge {
+    padding: 60px;
+}
+.charge .charge-text :first-child {
+    color: var(--DarkGrayishBlue);
+}
+.charge .charge-text :nth-child(2) {
+    color: var(--GrayishBlue);
+    margin: 20px auto;
+   
+}
+.charge .charge-secs {
+    margin: 50px auto;
+}
+.charge .charge-secs .top .sec img {
+    margin: 30px auto;
+}
+
+.charge .charge-secs .top .sec :nth-child(2) {
+    color: var(--DarkGrayishBlue);
+    margin: 20px auto;  
+}
+.charge .charge-secs .top .sec :nth-child(3) {
+    color: var(--GrayishBlue);
+}
+.charge .charge-secs .bottom {
+    margin-top: 90px;
+}
+.charge .charge-secs .bottom img {
+    display: block;
+    margin: 100px auto;
+}
+/* End Charge Style */
+
+/* Start Download Style */
+.download {
+    padding: 65px;
+    margin-bottom: 80px;
+}
+.download :first-child {
+    color: var(--DarkGrayishBlue);
+}
+.download :nth-child(2) {
+    color: var(--GrayishBlue);
+    margin: 20px auto;
+}
+/* End Download Style */
+
+/* Start Footer Style */
+footer {
+    background-color: rgba(239, 236, 236, 0.548);
+    padding: var(--padding);
+}
+
+footer .icon img {
+    width: 50px;
+}
+footer .links {
+    margin: 30px auto;
+    padding-bottom: 5px;
+}
+footer .links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: var(--GrayishBlue);
+}
+footer .sochial img {
+    margin: auto 20px;
+}
+/* End Footer Style */
+ 
+/* Responsive for Desktop */
+@media (min-width : 1000px) {
+header .text {
+    width: 35%;
+    margin: 0 auto;
+}
+header .links a {
+    display: inline;
+    margin: auto 10px; 
+ 
+}
+.details .details-text{
+    width: 40%;
+    margin: 0 auto;
+    
+}
+ 
+.details .device-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details .device-details img {
+    width: 100%;
+}
+.details .device-details .right {
+    line-height: 90px;
+    width: 34%;
+    
+}
+.details .device-details .right .sec {
+    text-align: left;
+}
+.clipboard{
+    width: 70%;
+    margin: 0 auto;
+}
+.clipboard :nth-child(2) {
+   width: 40%;
+ 
+}
+.clipboard :nth-child(3) {
+    width: 50%;
+}
+ 
+.charge .charge-secs .top .sec {
+    padding: 40px;
+    width: 50%;
+}
+.charge .charge-secs .top {
+    display: flex;
+    align-items: baseline;
+}
+.charge .charge-secs .bottom {
+    display: flex;
+    align-items: flex-end;
+}
+.download   {
+    width: 45%;
+    margin: auto auto;
+}
+.download .text :last-child {
+    margin-bottom: 50px;
+}
+.download .links a {
+    display: inline;
+    margin: auto 10px; 
+
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+footer div {
+    width: 34%;
+}
+footer .links {
+    display: flex;
+    flex-flow: column wrap;
+    height: 117px;
+    justify-content: space-between;
+    text-align: left;
+}
+footer .links  a {
+ display: inline-block;
+ margin-right: 15px;
+   
+}
+}

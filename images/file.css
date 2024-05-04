@@ -1,0 +1,61 @@
+:root{
+--StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(/BaiJamjuree-Bold.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-Italic.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-Light.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-Medium.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'cairo' ;
+    src: url(/BaiJamjuree-SemiBoldItalic.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'cairo';
+}
